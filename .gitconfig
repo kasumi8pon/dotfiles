@@ -1,0 +1,13 @@
+[user]
+	email = all.splashing@gmail.com
+[core]
+	excludesfile = /Users/kasumiteruya/.gitignore_global
+[alias]
+	lg = log --graph --all --decorate
+	co = checkout
+	br = branch
+	cp = cherry-pick
+	sp = stash pop
+	ss = stash save
+	cm = commit
+	st = status
