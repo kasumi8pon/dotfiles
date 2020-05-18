@@ -9,5 +9,7 @@
 	cp = cherry-pick
 	sp = stash pop
 	ss = stash save
-	cm = commit
+	cm = commit -v
 	st = status
+	rh = reset HEAD^
+
