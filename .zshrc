@@ -36,3 +36,5 @@ function peco-src () {
 }
 zle -N peco-src
 bindkey '^]' peco-src
+
+export PATH="$HOME/.cargo/bin:$PATH"
