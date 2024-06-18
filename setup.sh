@@ -10,9 +10,14 @@ if [ ! -d "${HOME}/.zprezto" ] ; then
 fi
 
 DOTPATH=~/dotfiles
-for f in .??*
+for f in $DOTPATH/.??*
 do
-    [ "$f" = ".git" ] && continue
-    [ "$f" = ".DS_Store" ] && continue
-    ln -snfv "$DOTPATH/$f" "$HOME"/"$f"
+    fname=$(basename "$f")
+    if [ "$fname" = ".git" ] || [ "$fname" = ".DS_Store" ]; then
+        echo "Skipping $fname"
+        continue
+    else
+        echo "Linking $fname"
+        ln -snfv "$f" "$HOME/$fname"
+    fi
 done
