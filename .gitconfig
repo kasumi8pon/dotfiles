@@ -11,6 +11,7 @@
 	co = checkout
 	cp = cherry-pick
 	lg = log --graph --all --decorate
+  pushf = push --force-with-lease --force-if-includes
 	rh = reset HEAD^
 	sp = stash pop
 	ss = stash save
