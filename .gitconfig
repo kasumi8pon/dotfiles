@@ -5,16 +5,15 @@
 	excludesfile = /Users/kasumi/.gitignore_global
 	commentChar = ^
 [alias]
-	lg = log --graph --all --decorate
-	co = checkout
 	br = branch
+	cm = commit -v
+	co = checkout
 	cp = cherry-pick
+	lg = log --graph --all --decorate
+	rh = reset HEAD^
 	sp = stash pop
 	ss = stash save
-	cm = commit -v
 	st = status
-	rh = reset HEAD^
-
 [init]
 	defaultBranch = main
 [pull]
